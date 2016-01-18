@@ -71,7 +71,6 @@
 - (void)setBadgeTextColor:(UIColor *)badgeTextColor
 {
     _badgeTextColor = badgeTextColor;
-    
     if (self.badge) {
         [self refreshBadge];
     }
@@ -80,7 +79,6 @@
 - (void)setBadgeFont:(UIFont *)badgeFont
 {
     _badgeFont = badgeFont;
-    
     if (self.badge) {
         [self refreshBadge];
     }
@@ -94,15 +92,13 @@
         CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
         [animation setFromValue:[NSNumber numberWithFloat:1]];
         [animation setToValue:[NSNumber numberWithFloat:1.5]];
-        animation.autoreverses = YES;
+         animation.autoreverses = YES;
         [animation setDuration:0.2];
         [animation setTimingFunction:[CAMediaTimingFunction functionWithControlPoints:.4 :1.3 :1 :1]];
         [self.badge.layer addAnimation:animation forKey:@"bounceAnimation"];
     }
-    
     // Set the new value
     self.badge.text = self.badgeValue;
-    
     // Animate the size modification if needed
 }
 
