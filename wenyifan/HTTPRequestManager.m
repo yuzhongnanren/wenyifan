@@ -30,7 +30,7 @@ NSString *const HTTPConnectionError = @"网络连接失败";
         [hud show:YES];
     }
     hud.removeFromSuperViewOnHide = YES;
-    [[AFHTTPRequestOperationManager manager] POST:[BaseUrl stringByAppendingPathComponent:appendString] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[AFHTTPRequestOperationManager manager] POST:BaseUrl parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"%@",responseObject);
         NSLog(@"%@",[[responseObject objectForKey:@"rs_msg"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
         if ([[responseObject objectForKey:@"rs_code"] integerValue] == 1000) {
@@ -56,6 +56,7 @@ NSString *const HTTPConnectionError = @"网络连接失败";
         }
     }];
 }
+
 
 - (void)GET:(NSString*)appendString
  dictionary:(NSDictionary*)parameters

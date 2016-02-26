@@ -27,12 +27,21 @@
     self.tableView.separatorStyle  = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.showsHorizontalScrollIndicator = NO;
+    [self feachData];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)feachData {
+    [[HTTPRequestManager manager] POST:@"" dictionary:@{} success:^(id responseObject) {
+        
+    } failure:^(NSError *error) {
+        
+    } view:self.view progress:YES];
 }
 
 #pragma mark - UITableViewDataSource

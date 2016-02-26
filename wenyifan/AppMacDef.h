@@ -11,7 +11,7 @@
 
 #define YouMeng_Key @"5618a63e67e58e0cb900130d"
 
-#define BaseUrl   @"http://yun.haodai.com/Manager/"
+#define BaseUrl   @"http://101.200.198.164:8080/WzkService/Wzk/WzkServer"
 
 //征信查询的Key
 #define APPKEY @"tBb2Ta6UJhRJ04W77qGXdows19m0Vjj4"
@@ -119,7 +119,7 @@ otherButtonTitles:nil]; \
 #if __has_feature(objc_arc)
 //compiling with ARC
 #else
-#define mSafeRelease(object)     [object release];  object=nil
+#define mSafeRelease(object)     [object release]; object=nil
 #endif
 
 //调试模式下输入NSLog，发布后不再输入。

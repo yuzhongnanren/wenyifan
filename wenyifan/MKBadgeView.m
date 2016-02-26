@@ -84,7 +84,6 @@
     }
 }
 
-
 - (void)updateBadgeValueAnimated:(BOOL)animated
 {
     // Bounce animation on badge if value changed and if animation authorized
@@ -101,6 +100,8 @@
     self.badge.text = self.badgeValue;
     // Animate the size modification if needed
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
