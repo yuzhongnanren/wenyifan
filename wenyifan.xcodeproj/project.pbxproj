@@ -503,10 +503,11 @@
 				TargetAttributes = {
 					AE0C51BD1C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 3YR7CL6SMV;
+						DevelopmentTeam = 46VTG4H3WE;
 					};
 					AE0C51D61C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = T2N2LB489M;
 						TestTargetID = AE0C51BD1C0FD86B00267C8A;
 					};
 				};
@@ -787,6 +788,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -798,6 +801,7 @@
 				INFOPLIST_FILE = wenyifanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenyifan.app/wenyifan";
 			};
 			name = Debug;
@@ -806,6 +810,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -813,6 +819,7 @@
 				INFOPLIST_FILE = wenyifanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenyifan.app/wenyifan";
 			};
 			name = Release;

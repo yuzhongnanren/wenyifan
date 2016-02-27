@@ -30,6 +30,7 @@ NSString *const HTTPConnectionError = @"网络连接失败";
         [hud show:YES];
     }
     hud.removeFromSuperViewOnHide = YES;
+   [AFHTTPRequestOperationManager manager].responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",@"text/json", @"text/javascript",@"text/plain",nil];
     [[AFHTTPRequestOperationManager manager] POST:[BaseUrl stringByAppendingPathComponent:appendString] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"%@",responseObject);
         NSLog(@"%@",[[responseObject objectForKey:@"rs_msg"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);

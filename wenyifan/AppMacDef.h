@@ -11,7 +11,7 @@
 
 #define YouMeng_Key @"5618a63e67e58e0cb900130d"
 
-#define BaseUrl   @"http://yun.haodai.com/Manager/"
+#define BaseUrl   @"http://192.168.0.104:8080/WzkService/Wzk/WzkServer"
 
 //征信查询的Key
 #define APPKEY @"tBb2Ta6UJhRJ04W77qGXdows19m0Vjj4"
