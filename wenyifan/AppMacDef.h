@@ -11,11 +11,7 @@
 
 #define YouMeng_Key @"5618a63e67e58e0cb900130d"
 
-<<<<<<< HEAD
-#define BaseUrl   @"http://192.168.0.104:8080/WzkService/Wzk/WzkServer"
-=======
 #define BaseUrl   @"http://101.200.198.164:8080/WzkService/Wzk/WzkServer"
->>>>>>> 5e0a2ef121d480ab5cb5c5f6ed87aae0a2fc1bd1
 
 //征信查询的Key
 #define APPKEY @"tBb2Ta6UJhRJ04W77qGXdows19m0Vjj4"

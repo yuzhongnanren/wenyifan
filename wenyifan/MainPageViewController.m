@@ -37,7 +37,7 @@
 }
 
 - (void)feachData {
-    [[HTTPRequestManager manager] POST:@"" dictionary:@{} success:^(id responseObject) {
+    [[HTTPRequestManager manager] POST:@"" dictionary:@{@"userId":@"0",@"svcCode":@"10005",@"svcSequenceNo":@"WZKTest",@"md5":[[AppFun sharedInstance] md5:@"WZKTest"]} success:^(id responseObject) {
         
     } failure:^(NSError *error) {
         

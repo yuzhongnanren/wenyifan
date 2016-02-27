@@ -34,7 +34,6 @@
 		AE5B2AD51C1529D60085FD0F /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B2AD41C1529D60085FD0F /* MainPageViewController.m */; };
 		AE5B2ADC1C16A0D70085FD0F /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B2ADB1C16A0D70085FD0F /* UserViewController.m */; };
 		AE74E3B61C28023400AF2506 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74E3B51C28023400AF2506 /* UITextView+Placeholder.m */; };
-		AE7A91F71C2A7BBB008DCC87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7A91F61C2A7BBB008DCC87 /* LaunchScreen.storyboard */; };
 		AEE5C7621C17F817009AC1E3 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE5C7611C17F817009AC1E3 /* PublishViewController.m */; };
 		AEE5C7661C1811EA009AC1E3 /* Novel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE5C7651C1811EA009AC1E3 /* Novel.m */; };
 		AEE5C7681C1A7A6C009AC1E3 /* UserHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE5C7671C1A7A6C009AC1E3 /* UserHeadView.xib */; };
@@ -118,7 +117,6 @@
 		AE5B2ADB1C16A0D70085FD0F /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		AE74E3B41C28023400AF2506 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		AE74E3B51C28023400AF2506 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
-		AE7A91F61C2A7BBB008DCC87 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEE5C7601C17F817009AC1E3 /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
 		AEE5C7611C17F817009AC1E3 /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
 		AEE5C7641C1811EA009AC1E3 /* Novel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Novel.h; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 			children = (
 				AE0C51C51C0FD86B00267C8A /* AppDelegate.h */,
 				AE0C51C61C0FD86B00267C8A /* AppDelegate.mm */,
-				AE7A91F61C2A7BBB008DCC87 /* LaunchScreen.storyboard */,
 				AE0C51CB1C0FD86B00267C8A /* Main.storyboard */,
 				AE5B2AC81C113F020085FD0F /* Common */,
 				AE5B2AC71C1054590085FD0F /* UIKit */,
@@ -506,7 +503,6 @@
 				TargetAttributes = {
 					AE0C51BD1C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 46VTG4H3WE;
 					};
 					AE0C51D61C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
@@ -540,7 +536,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0C51CD1C0FD86B00267C8A /* Main.storyboard in Resources */,
-				AE7A91F71C2A7BBB008DCC87 /* LaunchScreen.storyboard in Resources */,
 				AE0C51CF1C0FD86B00267C8A /* Images.xcassets in Resources */,
 				AEE5C7681C1A7A6C009AC1E3 /* UserHeadView.xib in Resources */,
 			);

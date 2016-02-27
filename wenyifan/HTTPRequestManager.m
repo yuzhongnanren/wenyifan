@@ -30,23 +30,18 @@ NSString *const HTTPConnectionError = @"网络连接失败";
         [hud show:YES];
     }
     hud.removeFromSuperViewOnHide = YES;
-<<<<<<< HEAD
-   [AFHTTPRequestOperationManager manager].responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",@"text/json", @"text/javascript",@"text/plain",nil];
-    [[AFHTTPRequestOperationManager manager] POST:[BaseUrl stringByAppendingPathComponent:appendString] parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-=======
     [[AFHTTPRequestOperationManager manager] POST:BaseUrl parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
->>>>>>> 5e0a2ef121d480ab5cb5c5f6ed87aae0a2fc1bd1
         NSLog(@"%@",responseObject);
-        NSLog(@"%@",[[responseObject objectForKey:@"rs_msg"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
-        if ([[responseObject objectForKey:@"rs_code"] integerValue] == 1000) {
+        NSLog(@"%@",[[responseObject objectForKey:@"errorMessage"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]);
+        if ([[responseObject objectForKey:@"responseCode"] integerValue] == 1) {
             [hud hide:YES];
             if (success) {
                 success(responseObject);
             }
         }else {
             hud.mode = MBProgressHUDModeText;
-            if (isNotNull([responseObject objectForKey:@"rs_msg"])) {
-               hud.labelText = [responseObject objectForKey:@"rs_msg"];
+            if (isNotNull([responseObject objectForKey:@"errorMessage"])) {
+               hud.labelText = [responseObject objectForKey:@"errorMessage"];
             }else {
                hud.labelText = HTTPServerError;
             }
