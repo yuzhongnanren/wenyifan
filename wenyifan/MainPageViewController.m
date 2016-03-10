@@ -37,11 +37,28 @@
 }
 
 - (void)feachData {
-    [[HTTPRequestManager manager] POST:@"" dictionary:@{@"userId":@"0",@"svcCode":@"10005",@"svcSequenceNo":@"WZKTest",@"md5":[[AppFun sharedInstance] md5:@"WZKTest"]} success:^(id responseObject) {
-        
-    } failure:^(NSError *error) {
-        
-    } view:self.view progress:YES];
+   NSDictionary *dic = @{@"userId":@"0",@"svcCode":@"10005",@"svcSequenceNo":@"WZKTest",@"md5":[[AppFun sharedInstance] md5:@"WZKTest"]};
+   NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:NULL];
+   NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//    NSString *postBody = @"{\"checkNo\":\"1234\",\"md5\":\"86d38268cd2ba040a91a7b7e68df135a\",\"mobile\":\"18100630660\",\"nickName\":\"大方\",\"svcCode\":\"10005\",\"svcSequenceNo\":\"1453551382408\"}";
+
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:BaseUrl]];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:[jsonStr dataUsingEncoding:NSUTF8StringEncoding]];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:NULL];
+//         [];
+        NSLog(@"%@",dic);
+    }];
+//    
+//    [[HTTPRequestManager manager] POST:@"" dictionary:@{@"userId":@"0",@"svcCode":@"10005",@"svcSequenceNo":@"WZKTest",@"md5":[[AppFun sharedInstance] md5:@"WZKTest"]} success:^(id responseObject) {
+//        
+//    } failure:^(NSError *error) {
+//        
+//    } view:self.view progress:YES];
 }
 
 #pragma mark - UITableViewDataSource

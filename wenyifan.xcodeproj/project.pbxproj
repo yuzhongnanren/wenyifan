@@ -503,10 +503,11 @@
 				TargetAttributes = {
 					AE0C51BD1C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = L6D4NQX9LC;
 					};
 					AE0C51D61C0FD86B00267C8A = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = T2N2LB489M;
+						DevelopmentTeam = L6D4NQX9LC;
 						TestTargetID = AE0C51BD1C0FD86B00267C8A;
 					};
 				};
@@ -762,6 +763,7 @@
 				INFOPLIST_FILE = wenyifan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoya.wenzikong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -780,6 +782,7 @@
 				INFOPLIST_FILE = wenyifan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoya.wenzikong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
